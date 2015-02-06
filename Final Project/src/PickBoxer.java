@@ -7,7 +7,7 @@ public class PickBoxer
 	static Scanner userInput = new Scanner (System.in);
 	public String name;
 	public int health;
-	public int stamina;
+	
 	public int power;
 	
 	public String move1;
@@ -20,11 +20,11 @@ public class PickBoxer
 	public int Special;
 	
 	
-		public PickBoxer(String string, int h, int s, int p, String move1name, int bloc, String move2name, int pun, String move3name, int wrap, String move4name, int spec) 
+		public PickBoxer(String string, int h, int p, String move1name, int bloc, String move2name, int pun, String move3name, int wrap, String move4name, int spec) 
 			{
 			name = string;
 			health = h;
-			stamina = s;
+			
 			power = p;
 			
 				move1 = move1name;
@@ -73,7 +73,7 @@ public class PickBoxer
 				{
 				return name;
 				}
-			private void setName(String name) 
+			public void setName(String name) 
 				{
 				this.name = name;
 				}
@@ -81,23 +81,15 @@ public class PickBoxer
 				{
 				return health;
 				}
-			private void setHealth(int health) 
+			public void setHealth(int health) 
 				{
 				this.health = health;
-				}
-			int getStamina() 
-				{
-				return stamina;
-				}
-			private void setStamina(int stamina) 
-				{
-				this.stamina = stamina;
 				}
 			int getPower() 
 				{
 				return power;
 				}
-			private void setPower(int power) 
+			public void setPower(int power) 
 				{
 				this.power = power;
 				}
